@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="p-section">
+        <h2 class="hading">Student Enrollment</h2>
+        <form id="enrollmentForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="emailInput">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="phoneInput">Phone:</label>
+            <input type="tel" name="phone" id="phone"><br>
+            <label for="websiteInput">Website:</label>
+            <input type="text" name="website" id="website"><br>
+            <div class="radio-group">
+            Gender:<br>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div class="checkbox-group">
+            Skills:<br>
+                <input type="checkbox" name="skills" value="html"> HTML
+                <input type="checkbox" name="skills" value="css"> CSS
+                <input type="checkbox" name="skills" value="js"> JavaScript
+            </div>
+            <div class="container">
+            <h3>Upload an Image:</h3>
+                <input type="file" id="imageUpload" accept="image/*">
+                <div class="image-preview" id="imagePreview">
+                    <img src="#" alt="Image Preview" class="preview-image">
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <section class="p-section">
+        <h2>Submitted Data</h2>
+        <table id="dataTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Gender</th>
+                <th>Skills</th>
+                <th>Image</th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
